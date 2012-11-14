@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=GtkLanTetris
+Comment=Multiplayer tetris
+Encoding=UTF-8
+Version=1.0
+Exec=gtklantetris
+Type=Application
+Icon=gtklantetris.png
+Categories=Application;Game
+Terminal=0
+SingleInstance=true

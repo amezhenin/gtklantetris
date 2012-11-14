@@ -1,0 +1,12 @@
+# for PC
+# Place the data file to appropriate directory
+
+# Place the desktop file
+desktopdir=$(prefix)/share/applications
+desktop_DATA=gtklantetris.desktop
+
+icon_48x48dir=$(prefix)/share/pixmaps
+icon_48x48_DATA=icons/48x48/gtklantetris.png
+
+EXTRA_DIST = $(desktop_DATA) $(icon_48x48_DATA)
+

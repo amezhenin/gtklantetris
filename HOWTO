@@ -1,0 +1,9 @@
+Sun 25 Jan 2009 (Mezhenin Atryom) 
+This is brief instruction for compiling and installing GtkLanTetris:
+   1) First of all you need to choose the type of device, so run: 
+	./pc_autogen.sh (for PC) 
+	./maemo_autogen.sh (for MAEMO device)
+   2) ./configure
+   3) make
+   4) make install (under root)	 
+      

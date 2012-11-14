@@ -1,0 +1,12 @@
+[Desktop Entry]
+Comment=Multiplayer tetris
+Encoding=UTF-8
+Version=0.1
+Type=Application
+Name=GtkLanTetris
+Exec=@prefix@/bin/gtklantetris
+Icon=gtklantetris
+X-Window-Icon=gtklantetris
+X-Window-Icon-Dimmed=gtklantetris
+X-Osso-Service=ru.karelia.cs.gtklantetris
+X-Osso-Type=application/x-executable

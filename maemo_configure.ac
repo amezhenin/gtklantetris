@@ -1,0 +1,25 @@
+# The package name is simplecaption, the version number is 1.0
+AC_INIT(gtklantetris, 0.1)
+
+# Tell automake to prepare for real work.
+AM_INIT_AUTOMAKE
+
+# Check for the C compiler.
+AC_PROG_CC
+
+# Check that 'install' program is available
+AC_PROG_INSTALL
+
+# Check whether the necessary pkg-config packages are present
+PKG_CHECK_MODULES(GTKLANTETRIS, gtk+-2.0 hildon-1 libosso >= 1)
+#PKG_CHECK_MODULES(GTKLANTETRIS, gtk+-2.0)
+
+# Add the pkg-config supplied values of compiler and linker flags
+CFLAGS="$GTKLANTETRIS_CFLAGS $CFLAGS -DBIGBLOCKS -DMAEMO"
+LIBS="$GTKLANTETRIS_LIBS $LIBS"
+
+# Generate the Makefile files from Makefile.in ones
+AC_OUTPUT(Makefile data/Makefile src/Makefile)
+
+# Generate the service and desktop files based on the templates
+AC_OUTPUT(data/gtklantetris.desktop data/ru.karelia.cs.gtklantetris.service)

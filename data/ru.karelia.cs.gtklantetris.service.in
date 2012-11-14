@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=ru.karelia.cs.gtklantetris
+Exec=@prefix@/bin/gtklantetris
